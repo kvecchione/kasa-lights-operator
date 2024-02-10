@@ -1,0 +1,8 @@
+apiVersion: kvecchione.dev/v1
+kind: KasaLight
+metadata:
+  name: bedroom-light
+spec:
+  state: 'on'
+  ip: 10.0.100.8
+  type: plug
