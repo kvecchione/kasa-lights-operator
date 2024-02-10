@@ -1,9 +1,9 @@
 TP-Link Kasa Lights Operator
 ---
 
-I was interested in trying out building a Kubernetes Operator using KOPF (Kubernetes Operator Python Framework): https://kopf.readthedocs.io/en/stable/
+I wanted to learn how to create my own Kubernetes operator using Python, so I wrote a simple example using KOPF. https://kopf.readthedocs.io/en/stable/
 
-This operator uses the python-kasa python library to interact with TP-Link Kasa Plugs and Bulbs. https://github.com/python-kasa/python-kasa
+The controller uses the python-kasa python library to interact with TP-Link Kasa Plugs and Bulbs based on the desired state of the `KasaLight` custom resources. https://github.com/python-kasa/python-kasa
 
 ## Installation
 Install the Custom Resource Definition (CRD) with `kubectl apply -f crd/crd.yml`. This will configure the KasaLight object type in Kubernetes.
