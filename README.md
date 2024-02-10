@@ -14,3 +14,5 @@ run `kubectl apply -f deployment.yml`
 ## Usage
 
 Once these are created and running, we can apply a KasaLight manifest with a desired IP, state (on/off), and type (plug/bulb). Once you have added the right values here, run `kubectl apply -f example/example.yml` and it should adjust the state of the light.
+
+Note: The `state` value needs to be in quotes because YAML translates on/off to boolean.
